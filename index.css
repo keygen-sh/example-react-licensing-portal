@@ -1,0 +1,224 @@
+body {
+  margin: 0;
+}
+
+.demo {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.demo-component {
+  position: relative;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+  text-align: left;
+  color: #000;
+  background-color: #fff;
+  border: 2px solid #edeff3;
+  border-radius: 10px;
+  padding: 2rem;
+  margin: 1rem 0;
+}
+
+.demo-component * {
+  color: inherit;
+  font-family: inherit;
+  font-weight: initial;
+}
+
+.demo-component strong {
+  font-weight: 700;
+}
+
+.demo-component form input + button,
+.demo-component form input + input {
+  margin-top: 1rem;
+}
+
+.demo-component input {
+  font-family: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+  line-height: 1.5;
+  width: 100%;
+  padding: 0.25rem 0.5rem;
+  background-color: #fff;
+  border: 1px solid #a6afbd;
+  border-radius: 5px;
+}
+
+.demo-component input:focus {
+  outline-color: #0000ff;
+}
+
+.demo-component button {
+  font-size: 1rem;
+  color: #fff;
+  padding: 0.15rem 0.5rem;
+  background: #0000ff;
+  border: 2px solid #0000d4;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
+
+.demo-component button:active {
+  background: #0000d4;
+}
+
+.demo-component button.demo-component__button--deactivate {
+  background-color: color("red");
+  border-color: color("red");
+}
+
+.demo-component button.demo-component__button--activate {
+  background-color: color("teal", "dark");
+  border-color: color("teal", "dark");
+}
+
+.demo-component button.demo-component__button--logout {
+  background-color: color("gray");
+  border-color: color("gray");
+}
+
+.demo-component code,
+.demo-component pre {
+  font-family: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+  color: #5f6e86;
+  padding: 4px 6px 2px;
+  border-color: currentColor;
+  border-width: 1px;
+}
+
+.demo-component table {
+  position: relative;
+  font-size: 0.875rem;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.demo-component table tr {
+  display: table-row;
+  white-space: nowrap;
+  border-bottom: 1px solid #f3f3f3;
+}
+
+.demo-component table tr:last-of-type {
+  border-bottom: 0;
+}
+
+.demo-component table tr:last-of-type td {
+  padding-bottom: 0;
+}
+
+.demo-component table th,
+.demo-component table td {
+  padding: 1rem 2.5rem 1rem 0;
+  text-align: left;
+}
+
+.demo-component table th {
+  position: sticky;
+  top: 0;
+  font-weight: 700;
+  background: #fff;
+  box-shadow: 0 -1px 0 0 #e2e2e2, 0 1px 0 0 #e2e2e2;
+}
+
+.demo-component table th,
+.demo-component table td {
+  display: table-cell;
+  font-size: 0.875rem;
+}
+
+.demo-component table th:last-of-type,
+.demo-component table td:last-of-type {
+  text-align: right;
+  padding-right: 0;
+}
+
+.demo-component table td input {
+  width: auto;
+}
+
+.demo-component table button {
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+.demo-component h2 {
+  margin: 0 0 1rem;
+}
+
+.demo-component h2 small {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #a6afbd;
+  margin-bottom: 0.25rem;
+}
+
+.demo-component h3 {
+  margin: 0 0 1rem;
+}
+
+.demo-component h3 small {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #a6afbd;
+  margin-bottom: 0.25rem;
+}
+
+.demo-component--alert h2,
+.demo-component--alert h3,
+.demo-component--alert code {
+  color: #fe0000;
+}
+
+.demo-component--alert button {
+  background: #fe0000;
+  border: 2px solid #c52712;
+}
+
+.demo-component--alert button:active {
+  background: #c52712;
+}
+
+.demo-component__info {
+  margin-top: 0;
+}
+
+.demo-component__table {
+  overflow-x: auto;
+  border-top: 1px solid #e2e2e2;
+}
+
+.demo-component__tag {
+  position: relative;
+  top: -4px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 0.25em 0.75rem;
+  background: #12c570;
+  border-radius: 1rem;
+  margin-left: 0.5rem;
+}
+
+.demo-component__tag--valid {
+  background: #12c570;
+}
+
+.demo-component__tag--invalid {
+  background: #fe0000;
+}
+
+.demo-component__tag--small {
+  top: -2px;
+  font-size: 0.75rem;
+  padding: 0.15rem 0.5rem;
+}
